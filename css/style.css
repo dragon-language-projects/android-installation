@@ -1,0 +1,275 @@
+
+/* Basic styling navbar */
+* {
+box-sizing: border-box;
+padding: 0;
+margin: 0;
+}
+body {
+font-family: sans-serif;
+background: #f1f1f1;
+}
+
+.twi-navbar {
+background: #222;
+padding: 5px 20px;
+position: relative;
+display: -ms-flexbox;
+-ms-flex-wrap: wrap;
+flex-wrap: wrap;
+-ms-flex-align: center;
+align-items: center;
+-ms-flex-pack: justify;
+justify-content: space-between;
+padding: 0.5rem 1rem;
+}
+
+a {
+color: white;
+text-decoration: none;
+}
+
+/* navbar brand or logo IMG style */
+
+.navbar-logo { 
+  display: inline-block;
+  padding-top: 0.3125rem;
+  padding-bottom: 0.3125rem;
+  margin-right: 1rem;
+  font-size: 1.25rem;
+  line-height: inherit;
+  white-space: nowrap;
+
+}
+.navbar-logo:hover, .navbar-logo:focus {
+  text-decoration: none;
+}
+
+ a:hover {
+text-decoration: none;
+
+}
+
+.menu {
+font-size: 16px;
+padding: 15px 5px;
+white-space: nowrap;
+}
+.navbar-logo a,
+.nav-toggle a {
+font-size: 20px;
+}
+.button.secondary {
+border-bottom: 1px #444 solid;
+}
+/* Mobile menu */
+.menu {
+display: flex;
+flex-wrap: wrap;
+justify-content: space-between;
+align-items: center;
+list-style-type: none;
+}
+.nav-toggle {
+order: 1;
+}
+.item.button {
+order: 2;
+}
+/* navbar item list */
+.item {
+width: 100%;
+padding: 15px 5px;
+text-align: center;
+order: 3;
+display: none;
+}
+.item.active {
+display: block;
+}
+/* Tablet menu */
+@media all and (min-width: 600px) {
+.menu {
+justify-content: center;
+}
+.navbar-logo {
+flex: 1;
+}
+.nav-toggle {
+flex: 1;
+text-align: right;
+}
+.item.button {
+width: auto;
+order: 1;
+display: block;
+}
+.nav-toggle {
+order: 2;
+}
+.button.secondary {
+border: 0;
+}
+.button a {
+padding: 7.5px 15px;
+background: teal;
+border: 1px #006d6d solid;
+}
+.button.secondary a {
+background: transparent;
+}
+.button a:hover {
+text-decoration: none;
+}
+.button:not(.secondary) a:hover {
+background: #006d6d;
+border-color: #005959;
+}
+.button.secondary a:hover {
+color: #ddd;
+}
+}
+/* Desktop menu */
+@media all and (min-width: 900px) {
+.item {
+display: block;
+width: auto;
+}
+.nav-toggle {
+display: none;
+}
+.navbar-logo {
+order: 0;
+}
+.item {
+order: 1;
+}
+.button {
+order: 2;
+}
+.menu li {
+padding: 15px 10px;
+}
+.menu li.button {
+padding-right: 0;
+}
+}
+
+
+
+/* Generic styling */
+* {
+ box-sizing: border-box;
+ font-family: "Lato", sans-serif;
+ margin: 0;
+ padding: 0;
+}
+ul {
+ list-style: none;
+ padding-left: 0;
+}
+footer {
+ background-color: #333;
+ color: #bbb;
+ line-height: 1.5;
+}
+footer a {
+ text-decoration: none;
+ color: #eee;
+}
+a:hover {
+ text-decoration: underline;
+}
+.ft-title {
+ color: #fff;
+ font-family: "Merriweather", serif;
+ font-size: 1.375rem;
+ padding-bottom: 0.625rem;
+}
+/* Sticks footer to bottom */
+body {
+ display: flex;
+ min-height: 100vh;
+ flex-direction: column;
+}
+.container {
+ flex: 1;
+}
+/* Footer main */
+.ft-main {
+ padding: 1.25rem 1.875rem;
+ display: flex;
+ flex-wrap: wrap;
+}
+@media only screen and (min-width: 29.8125rem /* 477px */) {
+ .ft-main {
+   justify-content: space-evenly;
+ }
+}
+@media only screen and (min-width: 77.5rem /* 1240px */) {
+ .ft-main {
+   justify-content: space-evenly;
+ }
+}
+.ft-main-item {
+ padding: 1.25rem;
+ min-width: 12.5rem;
+}
+
+/* Footer main | Newsletter form */
+form {
+ display: flex;
+ flex-wrap: wrap;
+}
+input[type="email"] {
+ border: 0;
+ padding: 0.625rem;
+ margin-top: 0.3125rem;
+}
+input[type="submit"] {
+ background-color: #00d188;
+ color: #fff;
+ cursor: pointer;
+ border: 0;
+ padding: 0.625rem 0.9375rem;
+ margin-top: 0.3125rem;
+}
+/* Footer social */
+.ft-social {
+ padding: 0 1.875rem 1.25rem;
+}
+.ft-social-list {
+ display: flex;
+ justify-content: center;
+ border-top: 1px #777 solid;
+ padding-top: 1.25rem;
+}
+.ft-social-list li {
+ margin: 0.5rem;
+ font-size: 1.25rem;
+}
+/* Footer legal */
+.ft-legal {
+ padding: 0.9375rem 1.875rem;
+ background-color: #333;
+}
+.ft-legal-list {
+ width: 100%;
+ display: flex;
+ flex-wrap: wrap;
+}
+.ft-legal-list li {
+ margin: 0.125rem 0.625rem;
+ white-space: nowrap;
+}
+/* one before the last child */
+.ft-legal-list li:nth-last-child(2) {
+   flex: 1;
+}
+
+.text-lg {
+ color: #000;
+}
+.list {
+  padding-left: 10px;
+} 
